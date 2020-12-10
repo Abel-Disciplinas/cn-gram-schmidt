@@ -30,10 +30,13 @@ onde qᵢ é a i-ésima coluna da matriz Q m×n.
 
 A matriz R n×n é quadrada triangular superior com cada elemento dada por
 
-    rᵢⱼ = αᵢⱼ × ‖vᵢ‖,   1 ≤ i ≤ j ≤ n
+    rⱼⱼ = ‖vⱼ‖
+    rᵢⱼ = αᵢⱼ × ‖vᵢ‖,   1 ≤ i < j ≤ n
+
+Se m < n o método deve gerar um erro.
 """
 function gram_schmidt(A)
-  m, n = size(A)
-  ### AQUI
-  return Q, R
+    m, n = size(A)
+    ### AQUI
+    return Q, R
 end
